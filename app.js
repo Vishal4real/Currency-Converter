@@ -50,6 +50,7 @@ btn.addEventListener("click", async (evt) =>{
    // console.log(rate)
 
    let finalAmout = amtvalue * rate;
-    msg.innerText = `${amtvalue} ${from.value} = ${finalAmout} ${to.value}`
+    
+    msg.innerText = `${amtvalue} ${from.value} = ${Math.round(finalAmout * Math.pow(10,5)) / Math.pow(10,5)} ${to.value}`
 })
 
